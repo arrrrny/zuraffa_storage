@@ -618,7 +618,7 @@ packages:
     source: hosted
     version: "1.2.1"
   xml:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: xml
       sha256: "0fe8cc98946def31cbcbc8734aa4067031e6f65ea3a78a508060bfed2200bfeb"
@@ -661,17 +661,16 @@ packages:
     dependency: "direct main"
     description:
       name: zuraffa
-      sha256: e3e83fdb86b2b2ca08699e77d37b73c2752419093ae6645e8e0d9e93d22276de
+      sha256: b89bb4a0646347802d4c7b1052a626b2d0b6f956891eb9db4992325e7624b695
       url: "https://pub.dev"
     source: hosted
-    version: "7.0.1"
+    version: "7.2.0"
   zuraffa_minio:
     dependency: "direct main"
     description:
-      name: zuraffa_minio
-      sha256: "76815457aa58206c02b0933dde37f5092750b9ddaa97814ffadd2bf26d96e972"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.5"
+      path: "../zuraffa_minio"
+      relative: true
+    source: path
+    version: "7.2.0"
 sdks:
   dart: ">=3.13.0 <4.0.0"

@@ -495,13 +495,13 @@
     },
     {
       "name": "zuraffa",
-      "rootUri": "file:///Users/arrrrny/.pub-cache/hosted/pub.dev/zuraffa-7.0.1",
+      "rootUri": "file:///Users/arrrrny/.pub-cache/hosted/pub.dev/zuraffa-7.2.0",
       "packageUri": "lib/",
       "languageVersion": "3.11"
     },
     {
       "name": "zuraffa_minio",
-      "rootUri": "file:///Users/arrrrny/.pub-cache/hosted/pub.dev/zuraffa_minio-0.2.5",
+      "rootUri": "../../zuraffa_minio",
       "packageUri": "lib/",
       "languageVersion": "3.11"
     },

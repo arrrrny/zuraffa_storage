@@ -5,7 +5,7 @@
   "packages": [
     {
       "name": "zuraffa_storage",
-      "version": "0.1.1",
+      "version": "7.2.0",
       "dependencies": [
         "logging",
         "zuraffa",
@@ -13,6 +13,31 @@
       ],
       "devDependencies": [
         "test"
+      ]
+    },
+    {
+      "name": "zuraffa_minio",
+      "version": "7.2.0",
+      "dependencies": [
+        "buffer",
+        "convert",
+        "crypto",
+        "http",
+        "intl",
+        "meta",
+        "mime",
+        "path",
+        "xml"
+      ]
+    },
+    {
+      "name": "xml",
+      "version": "7.1.0",
+      "dependencies": [
+        "args",
+        "collection",
+        "meta",
+        "petitparser"
       ]
     },
     {
@@ -48,7 +73,7 @@
     },
     {
       "name": "zuraffa",
-      "version": "7.0.1",
+      "version": "7.2.0",
       "dependencies": [
         "analyzer",
         "archive",
@@ -78,19 +103,75 @@
       "dependencies": []
     },
     {
-      "name": "zuraffa_minio",
-      "version": "0.2.5",
+      "name": "path",
+      "version": "1.9.1",
+      "dependencies": []
+    },
+    {
+      "name": "mime",
+      "version": "2.1.0",
+      "dependencies": []
+    },
+    {
+      "name": "meta",
+      "version": "1.19.0",
+      "dependencies": []
+    },
+    {
+      "name": "intl",
+      "version": "0.20.3",
       "dependencies": [
-        "buffer",
-        "convert",
-        "crypto",
-        "http",
-        "intl",
+        "clock",
         "meta",
-        "mime",
-        "path",
-        "xml"
+        "path"
       ]
+    },
+    {
+      "name": "http",
+      "version": "1.6.0",
+      "dependencies": [
+        "async",
+        "http_parser",
+        "meta",
+        "web"
+      ]
+    },
+    {
+      "name": "crypto",
+      "version": "3.0.7",
+      "dependencies": [
+        "typed_data"
+      ]
+    },
+    {
+      "name": "convert",
+      "version": "3.1.2",
+      "dependencies": [
+        "typed_data"
+      ]
+    },
+    {
+      "name": "buffer",
+      "version": "1.2.3",
+      "dependencies": []
+    },
+    {
+      "name": "petitparser",
+      "version": "7.1.0",
+      "dependencies": [
+        "collection",
+        "meta"
+      ]
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "dependencies": []
+    },
+    {
+      "name": "args",
+      "version": "2.7.0",
+      "dependencies": []
     },
     {
       "name": "yaml",
@@ -241,11 +322,6 @@
       ]
     },
     {
-      "name": "path",
-      "version": "1.9.1",
-      "dependencies": []
-    },
-    {
       "name": "package_config",
       "version": "3.0.0",
       "dependencies": [
@@ -300,11 +376,6 @@
         "vm_service",
         "yaml"
       ]
-    },
-    {
-      "name": "collection",
-      "version": "1.19.1",
-      "dependencies": []
     },
     {
       "name": "boolean_selector",
@@ -385,11 +456,6 @@
       ]
     },
     {
-      "name": "meta",
-      "version": "1.19.0",
-      "dependencies": []
-    },
-    {
       "name": "get_it",
       "version": "9.2.1",
       "dependencies": [
@@ -432,23 +498,6 @@
         "collection",
         "matcher",
         "meta"
-      ]
-    },
-    {
-      "name": "http",
-      "version": "1.6.0",
-      "dependencies": [
-        "async",
-        "http_parser",
-        "meta",
-        "web"
-      ]
-    },
-    {
-      "name": "crypto",
-      "version": "3.0.7",
-      "dependencies": [
-        "typed_data"
       ]
     },
     {
@@ -498,35 +547,24 @@
       ]
     },
     {
-      "name": "args",
-      "version": "2.7.0",
+      "name": "clock",
+      "version": "1.1.3",
       "dependencies": []
     },
     {
-      "name": "mime",
-      "version": "2.1.0",
+      "name": "web",
+      "version": "1.1.1",
       "dependencies": []
     },
     {
-      "name": "intl",
-      "version": "0.20.3",
+      "name": "http_parser",
+      "version": "4.1.2",
       "dependencies": [
-        "clock",
-        "meta",
-        "path"
-      ]
-    },
-    {
-      "name": "convert",
-      "version": "3.1.2",
-      "dependencies": [
+        "collection",
+        "source_span",
+        "string_scanner",
         "typed_data"
       ]
-    },
-    {
-      "name": "buffer",
-      "version": "1.2.3",
-      "dependencies": []
     },
     {
       "name": "string_scanner",
@@ -541,11 +579,6 @@
       "dependencies": [
         "web"
       ]
-    },
-    {
-      "name": "web",
-      "version": "1.1.1",
-      "dependencies": []
     },
     {
       "name": "source_maps",
@@ -575,16 +608,6 @@
       "name": "term_glyph",
       "version": "1.2.2",
       "dependencies": []
-    },
-    {
-      "name": "http_parser",
-      "version": "4.1.2",
-      "dependencies": [
-        "collection",
-        "source_span",
-        "string_scanner",
-        "typed_data"
-      ]
     },
     {
       "name": "cli_config",
@@ -766,11 +789,6 @@
       "dependencies": []
     },
     {
-      "name": "clock",
-      "version": "1.1.3",
-      "dependencies": []
-    },
-    {
       "name": "stream_transform",
       "version": "2.1.2",
       "dependencies": []
@@ -780,24 +798,6 @@
       "version": "2.1.6",
       "dependencies": [
         "clock"
-      ]
-    },
-    {
-      "name": "xml",
-      "version": "7.1.0",
-      "dependencies": [
-        "args",
-        "collection",
-        "meta",
-        "petitparser"
-      ]
-    },
-    {
-      "name": "petitparser",
-      "version": "7.1.0",
-      "dependencies": [
-        "collection",
-        "meta"
       ]
     }
   ],
