@@ -25,7 +25,7 @@ for the full migration map.
 dart pub add zuraffa_storage
 ```
 
-Requires `zuraffa: ^7.2.0`.
+Requires `zuraffa: ^7.3.0`.
 
 ## Usage
 
@@ -46,7 +46,7 @@ import 'package:zuraffa_storage/zuraffa_storage.dart';
 This repository is a standalone split from the core `zuraffa` monorepo
 (issue [#1690](https://github.com/arrrrny/zuraffa/issues/1690) §4) with full
 git history preserved. Its `pubspec.yaml` declares a hosted
-`zuraffa: ^7.2.0` constraint plus a `dependency_overrides` entry resolving
+`zuraffa: ^7.3.0` constraint plus a `dependency_overrides` entry resolving
 `zuraffa` to the local core checkout — so a sibling checkout of
 [arrrrny/zuraffa](https://github.com/arrrrny/zuraffa) at `../zuraffa` is
 required for `dart pub get`, `dart analyze`, and `dart test`:
