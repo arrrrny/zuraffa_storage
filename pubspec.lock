@@ -604,16 +604,18 @@ packages:
   zuraffa:
     dependency: "direct main"
     description:
-      path: "../zuraffa"
-      relative: true
-    source: path
-    version: "7.3.0"
+      name: zuraffa
+      sha256: "0d89eafae62efedfe2dc49e36e624759ed7b2b0f8c6715e9643831281e4f35ab"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.3.2"
   zuraffa_minio:
     dependency: "direct main"
     description:
-      path: "../zuraffa_minio"
-      relative: true
-    source: path
-    version: "7.3.0"
+      name: zuraffa_minio
+      sha256: adc3dd63fbb398ffa3d04322df28d27cffacc782ba83cf8f147f45c7e9db4a80
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.3.2"
 sdks:
   dart: ">=3.13.0 <4.0.0"
