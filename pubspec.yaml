@@ -1,6 +1,6 @@
 name: zuraffa_storage
 description: S3/MinIO storage capability for Zuraffa — MinioClient and the artifact-upload hooks (optional companion package; issue #1661).
-version: 7.3.2
+version: 7.3.6
 homepage: https://zuraffa.com
 repository: https://github.com/arrrrny/zuraffa_storage
 issue_tracker: https://github.com/arrrrny/zuraffa_storage/issues
@@ -10,9 +10,9 @@ environment:
 
 dependencies:
   # maintained fork of the abandoned minio package (xml 7 compatible)
-  zuraffa_minio: ^7.3.2
+  zuraffa_minio: ^7.3.6
   logging: ^1.3.0
-  zuraffa: ^7.3.2
+  zuraffa: ^7.3.6
 
 dev_dependencies:
   test: ^1.25.0
@@ -21,3 +21,8 @@ dev_dependencies:
 # still transitively pull the abandoned minio (xml 6.x) resolve cleanly.
 dependency_overrides:
   xml: 7.1.0
+
+  zuraffa_minio:
+    path: ../zuraffa_minio
+  zuraffa:
+    path: ../zuraffa
