@@ -22,7 +22,3 @@ dev_dependencies:
 dependency_overrides:
   xml: 7.1.0
 
-  zuraffa_minio:
-    path: ../zuraffa_minio
-  zuraffa:
-    path: ../zuraffa
