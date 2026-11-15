@@ -10,4 +10,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-  
+    ignore:
+      # Fleet mono-versioning: arrrrny/zuraffa's scripts/update_fleet.sh owns
+      # these two constraints (zuraffa_storage is in FLEET_REPOS) and pushes
+      # them straight to master — Dependabot would only race it with a PR
+      # against an already-stale base.
+      - dependency-name: "zuraffa"
+      - dependency-name: "zuraffa_minio"
